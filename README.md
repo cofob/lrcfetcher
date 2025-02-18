@@ -1,13 +1,13 @@
 # lrcfetcher
 
-A tool to automatically embed synchronized lyrics into your FLAC files. It supports both local `.lrc` files and an online API.
+A tool to automatically embed synchronized lyrics into your FLAC files. It supports both local `.lrc` files and an online API ([LRCLIB.net](https://lrclib.net/)).
 
 ## Installation
 
 Install this package locally:
 
 ```sh
-pip install .
+pip install lrcfetcher
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ lrcfetcher [DIRECTORY] [OPTIONS]
 ## Example
 
 ```sh
-lrcfetcher . --force
+lrcfetcher .
 ```
 
-This will search for `.flac` files in the current directory, skip any that already have lyrics unless `--force` is given, and embed synchronized lyrics if available.
+This will search for `.flac` files in the current directory, skip any that already have lyrics.
